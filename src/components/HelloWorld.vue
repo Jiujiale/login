@@ -37,6 +37,7 @@ export default {
 <style scoped>
 
 .main {
+  font-family:Microsoft YaHei;
   display:flex;
   flex-direction:row;
   width:100%;
@@ -45,9 +46,9 @@ export default {
   align-items:center;
 }
 .mainInput {
-  height: 40px;
+  height: 30px;
   margin-left:5px;
   width:150px;
-  font-size:20px;
+  font-size:16px;
 }
 </style>
