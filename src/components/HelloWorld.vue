@@ -1,7 +1,7 @@
 <template>
   <div class="hello">
     <div class="main">
-      <h1>EmployeeNumber</h1>
+      <h1>EmployeeNumber1</h1>
       <input v-model="number" class="mainInput" />
     </div>
     <button @click="submit">提交</button>
@@ -18,6 +18,7 @@ export default {
   },
   methods: {
     submit(){
+      console.log('=-=-=')
       alert('Please Enter Your ID Num')
       if (!this.number){
         alert('Please Enter Your ID Num')
