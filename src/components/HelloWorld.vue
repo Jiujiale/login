@@ -18,6 +18,7 @@ export default {
   },
   methods: {
     submit(){
+      alert('Please Enter Your ID Num')
       if (!this.number){
         alert('Please Enter Your ID Num')
         return
