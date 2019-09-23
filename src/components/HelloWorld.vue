@@ -1,7 +1,7 @@
 <template>
   <div class="hello">
     <div class="main">
-      <h1>EmployeeNumber1</h1>
+      EmployeeNumber
       <input v-model="number" class="mainInput" />
     </div>
     <button @click="submit">提交</button>
@@ -35,18 +35,19 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h1, h2 {
-  font-weight: normal;
-}
+
 .main {
   display:flex;
   flex-direction:row;
   width:100%;
+  font-size:16px;
+  font-weight:bold;
   align-items:center;
 }
 .mainInput {
   height: 40px;
   margin-left:5px;
+  width:150px;
   font-size:20px;
 }
 </style>
