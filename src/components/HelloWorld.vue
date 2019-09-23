@@ -2,9 +2,9 @@
   <div class="hello">
     <div class="main">
       <h1>EmployeeNumber</h1>
-      <input class="mainInput" />
+      <input v-model="number" class="mainInput" />
     </div>
-    <button>提交</button>
+    <button @click="submit">提交</button>
   </div>
 </template>
 
@@ -13,8 +13,23 @@ export default {
   name: 'HelloWorld',
   data () {
     return {
+      number:''
     }
-  }
+  },
+  methods: {
+    submit(){
+      if (!this.number){
+        alert('Please Enter Your ID Num')
+        return
+      }
+      this.$router.push({
+        name:'Second',
+        query:{
+          number:this.number
+        }
+      })
+    }
+  },
 }
 </script>
 
@@ -27,11 +42,11 @@ h1, h2 {
   display:flex;
   flex-direction:row;
   width:100%;
-  background:'red';
   align-items:center;
 }
 .mainInput {
   height: 40px;
   margin-left:5px;
+  font-size:20px;
 }
 </style>
