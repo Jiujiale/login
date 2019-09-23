@@ -18,8 +18,6 @@ export default {
   },
   methods: {
     submit(){
-      console.log('=-=-=')
-      alert('Please Enter Your ID Num')
       if (!this.number){
         alert('Please Enter Your ID Num')
         return
